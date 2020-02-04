@@ -196,7 +196,7 @@ def most_points_scored
 end
   
 def winning_team
-  both_teams = []
+  both_teams = {}
   game_hash.each do |home_or_away, team|
     both_teams << team.slice([:team_name])
     team[:players].each do |player, data|
