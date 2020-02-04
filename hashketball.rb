@@ -203,7 +203,7 @@ def winning_team
     end
     team[:players].each do |player, data|
       both_teams[team[:team_name]] += player[:points]
-    end
+      end
     end
   end
   p both_teams
