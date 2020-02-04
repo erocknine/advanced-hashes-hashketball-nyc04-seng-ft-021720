@@ -203,7 +203,8 @@ def winning_team
       both_teams[points] = player[:points]
       
     end
-  end    
+  end
+  p both_teams
 end
 
 
