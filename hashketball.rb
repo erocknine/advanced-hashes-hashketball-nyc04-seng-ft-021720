@@ -200,7 +200,6 @@ def winning_team
   game_hash.each do |home_or_away, team|
     if !both_teams[team[:team_name]]
       both_teams[team[:team_name]] = {}
-      p both_teams
     end
   end
   p both_teams
