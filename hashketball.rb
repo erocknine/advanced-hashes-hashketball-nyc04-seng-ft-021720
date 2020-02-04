@@ -205,7 +205,7 @@ def winning_team
       both_teams[team[:team_name]] += player[:points]
     end
   end
-  both_teams.max_by{|team, score| score}
+  both_teams.max_by{|team, score| score}.first
 end
 
 
