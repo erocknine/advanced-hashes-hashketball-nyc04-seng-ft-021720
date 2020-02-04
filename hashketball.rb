@@ -228,7 +228,7 @@ def long_name_steals_a_ton?
     end
   end
   
-  p most_steals.max
+  p most_steals.max_by{|name| name.length}
   p longest_name = longest_name.max_by{|name| name.length}
 end
 
