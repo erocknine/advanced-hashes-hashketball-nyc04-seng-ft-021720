@@ -201,7 +201,7 @@ def winning_team
     if !both_teams[team[:team_name]]
       both_teams[team[:team_name]] = {}
       p both_teams
-    
+    end
   end
   p both_teams
 end
