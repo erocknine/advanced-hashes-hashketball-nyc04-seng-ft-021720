@@ -227,7 +227,8 @@ def long_name_steals_a_ton?
       longest_name << player[:player_name]
     end
   end
-  
+  most_steals = most_steals.max_by{|name| name.length}
+  if most_steals == longest_name
   p most_steals.max_by{|name| name.length}
   p longest_name = longest_name.max_by{|name| name.length}
 end
