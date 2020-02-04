@@ -222,7 +222,7 @@ def long_name_steals_a_ton?
   most_steals = []
   game_hash.each do |home_or_away, team|
     team[:players].each do |player, data|
-      p player[:player_name].length
+    
     end
   end
 end
