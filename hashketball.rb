@@ -201,6 +201,10 @@ def winning_team
     if !both_teams[team[:team_name]]
       both_teams[team[:team_name]] = {}
     end
+    team[:players].each do |player, data|
+      both_teams[:team_name] = 
+      
+    end
   end
   p both_teams
 end
