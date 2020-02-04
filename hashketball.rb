@@ -198,7 +198,7 @@ end
 def winning_team
   both_teams = {}
   game_hash.each do |home_or_away, team|
-    both_teams << team.slice([:team_name])
+    if !both_teams[]
     team[:players].each do |player, data|
       both_teams[points] = player[:points]
       
