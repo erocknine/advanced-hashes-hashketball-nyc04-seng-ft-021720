@@ -225,9 +225,9 @@ def long_name_steals_a_ton?
     most_steals << team[:players].max_by{|k| k[:steals]}[:player_name]
     team[:players].each do |player, data|
       longest_name << player[:player_name]
-      
     end
   end
+  most_steals.sort_by{|name| name.length}
   p most_steals
   p longest_name = longest_name.max_by{|name| name.length}
 end
